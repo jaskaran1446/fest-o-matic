@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <title>Create Event</title>
+        <style>
+            .col-centered{
+                float: none;
+                margin: 0 auto;
+            }
+            .error {
+                color: #FF0000;
+            }
+            .footer{ 
+                position: fixed;     
+
+                bottom: 0px; 
+                width: 100%;
+                color:BLUE;
+
+            }  	
+
+        </style>
+    </head>
+    <body background="C:\Users\Jaskaran\Desktop\fest.jpg" style="padding-top:50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-centered">
+
+                    <form role="form" method="post" action="Schedule.do">
+                        <h1>Event Scheduler</h1><br><br>
+                        <div class="form-group">
+                            <label for="eventname">EVENT Name : </label>
+                            <input type="text" name="eventname" class="form-control" placeholder="Event Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="eventid">EVENT ID : </label>
+                            <input type="text" name="eventid" class="form-control" placeholder="Event ID">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="date">EVENT DATE : </label>
+                            <input type="text" name="date" class="form-control" placeholder="Event Date">
+                        </div>
+                        <div class="form-group">
+                            <label for="start">Start time : </label>
+                            <input type="text" name="start" class="form-control" placeholder="00:00">
+                        </div>
+                        <div class="form-group">
+                            <label for="end">End Time : </label>
+                            <input type="text" name="end" class="form-control" placeholder="23:59">
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form><!-- end of form --><span class="error"></span>
+                </div><!-- end of col-md-4 col-centered -->
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+        <div class="footer">
+            BY JASKARAN SINGH|
+            TEST (C) 2016|
+            ALL RIGHTS RESERVED    
+        </div>
+
+    </body>
+</html>
